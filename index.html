@@ -4,12 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWave</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <!-- Nav Section -->
-     nav
+    <!-- Header Area -->
+    <nav class="bg-[#1A0B32]">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a class="text-3xl font-bold text-amber-400" href="">
+                        Tech<span class="text-[#FB1CAA]">Wave</span>
+                    </a>
+                </div>
 
+                <!-- Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a class="text-white hover:text-amber-400 transition" href="">About</a>
+                    <a class="text-white hover:text-amber-400 transition" href="">Episodes</a>
+                    <a class="text-white hover:text-amber-400 transition" href="">Host</a>
+                </div>
+
+                <!-- Subscribe Button -->
+                <div class="hidden md:block">
+                    <button class="bg-gradient-to-r from-amber-400 to-pink-500 text-white px-6 py-2 rounded-full font-semibold hover:from-amber-500 hover:to-pink-600 transition">
+                        Subscribe
+                    </button>
+                </div>
+
+                <!-- Mobile Menu (Hamburger) -->
+                <div class="md:hidden">
+                    <input type="checkbox" id="menu-toggle" class="peer hidden">
+                    <label for="menu-toggle" class="cursor-pointer">
+                        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </label>
+
+                    <!-- Mobile Menu Dropdown -->
+                    <div class="peer-checked:block hidden absolute top-16 left-0 right-0 bg-white shadow-lg z-50">
+                        <div class="flex flex-col space-y-4 p-4">
+                            <a href="" class="text-gray-700 hover:text-amber-400 transition">About</a>
+                            <a href="" class="text-gray-700 hover:text-amber-400 transition">Episodes</a>
+                            <a href="" class="text-gray-700 hover:text-amber-400 transition">Host</a>
+                            <button class="bg-gradient-to-r from-amber-400 to-pink-500 text-white px-6 py-2 rounded-lg font-semibold hover:from-amber-500 hover:to-pink-600 transition">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Area -->
+    <section class="relative flex items-center justify-center bg-cover bg-center bg-no-repeat min-h-screen" style="background-image: url('assets/hero-bg.png');">
+        
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            
+            <!-- Image with Background Circle -->
+            <div class="relative inline-block mb-8">
+                <!-- Background Circle -->
+                <div class="w-48 h-48 md:w-64 md:h-64 mx-auto bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url('assets/hero-circle.png');">
+                    <!-- Microphone Image -->
+                    <img class="w-30 h-24 md:w-40 md:h-40 object-cover rounded-full shadow-2xl" src="assets/microphone.png" alt="Microphone">
+                </div>
+                <span class="absolute top-0 right-0  bg-green-400 px-7 py-5 text-xs md:xl font-semibold rounded-full">New</span>
+            </div>
+
+            <!-- Heading -->
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                TechWave
+            </h1>
+
+            <!-- Paragraph -->
+            <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+                Your daily dose of tech insights, productivity hacks, and personal growth
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#" class="bg-gradient-to-r from-amber-400 to-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:from-amber-500 hover:to-pink-600 transition transform hover:scale-105 shadow-lg w-full sm:w-auto">
+                    Listen on Spotify
+                </a>
+                <a href="#" class="bg-transparent border-green-400 text-[#00ff88] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 w-full sm:w-auto">
+                    Subscribe
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About section -->
+     <section class="bg-[#1A0B32] pt-14">
+         <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl font-semibold text-white text-center mb-7">About the Podcast</h1>
+            <p class="text-xs md:text-sm text-white text-center mb-6 mx-16">TechWave is your        go-to        podcast for staying ahead in the fast-paced world of technology.
+                We break down complex topics into digestible insights, explore productivity strategies that actually work,
+                and share stories of personal growth from industry leaders.
+            </p>
+            <p class="text-white text-xs md:text-sm text-center mb-6">
+                Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
+            </p>
+         </div>
+     </section>
 </body>
 </html>
