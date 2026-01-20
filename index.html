@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWave</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -30,8 +34,8 @@
                 <!-- Subscribe Button -->
                 <div class="hidden md:block">
                     <button
-                        class="bg-gradient-to-r from-amber-400 to-pink-500 text-white px-6 py-2 rounded-full font-semibold hover:from-amber-500 hover:to-pink-600 transition">
-                        Subscribe
+                        class="bg-gradient-to-r from-amber-400 to-pink-500 items-center text-white px-6 py-2 rounded-full font-semibold hover:from-amber-500 hover:to-pink-600 transition">
+                        Subscribe<i class="fa-solid fa-arrow-right ml-1 "></i>
                     </button>
                 </div>
 
@@ -66,15 +70,15 @@
     <section class="relative flex items-center justify-center bg-cover bg-center bg-no-repeat min-h-screen"
         style="background-image: url('assets/hero-bg.png');">
 
-        <!-- Content -->
+
         <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
 
-            <!-- Image with Background Circle -->
+
             <div class="relative inline-block mb-8">
-                <!-- Background Circle -->
+
                 <div class="w-48 h-48 md:w-64 md:h-64 mx-auto bg-cover bg-center bg-no-repeat flex items-center justify-center"
                     style="background-image: url('assets/hero-circle.png');">
-                    <!-- Microphone Image -->
+
                     <img class="w-30 h-24 md:w-40 md:h-40 object-cover rounded-full shadow-2xl"
                         src="assets/microphone.png" alt="Microphone">
                 </div>
@@ -82,12 +86,12 @@
                     class="absolute top-0 right-0  bg-green-400 px-7 py-5 text-xs md:xl font-semibold rounded-full">New</span>
             </div>
 
-            <!-- Heading -->
+
             <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
                 TechWave
             </h1>
 
-            <!-- Paragraph -->
+
             <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
                 Your daily dose of tech insights, productivity hacks, and personal growth
             </p>
@@ -99,8 +103,8 @@
                     Listen on Spotify
                 </a>
                 <a href="#"
-                    class="bg-transparent border-green-400 text-[#00ff88] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 w-full sm:w-auto">
-                    Subscribe
+                    class="bg-transparent border text-[#00ff88] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 w-full sm:w-auto">
+                    Subscribe<i class="fa-regular fa-envelope ml-1.5"></i>
                 </a>
             </div>
 
@@ -108,23 +112,29 @@
     </section>
 
     <!-- About section -->
-    <section class="bg-[#1A0B32] pt-14">
-        <div class="max-w-6xl mx-auto">
+    <section class="bg-[#1A0B32] pt-14 pb-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col justify-center items-center">
-                <h1 class="text-white text-4xl font-semibold mb-5">About the Podcast</h1>
-                <p class="text-white text-center mx-40">TechWave is your go-to podcast for staying
-                    paced world of technology.
-                </p>
-                <p class="text-white text-center mb-6 mx-30"> We break down complex topics into digestible insights,
-                    explore productivity strategies that actually work,
-                    and share stories of personal growth from industry leaders.
+                <h1 class="text-white text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 sm:mb-5 text-center">
+                    About the Podcast
+                </h1>
+
+                <p class="text-white text-center text-sm sm:text-base mb-4 max-w-2xl px-4">
+                    TechWave is your go-to podcast for staying paced world of technology.
                 </p>
 
-                <p class="text-white">Join thousands of young professionals and tech enthusiasts who start their day
-                    with TechWave.</p>
+                <p class="text-white text-center text-sm sm:text-base mb-4 sm:mb-6 max-w-3xl px-4">
+                    We break down complex topics into digestible insights, explore productivity strategies that actually
+                    work, and share stories of personal growth from industry leaders.
+                </p>
+
+                <p class="text-white text-center text-sm sm:text-base max-w-2xl px-4">
+                    Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
+                </p>
             </div>
-            <div>
-                <hr class="border-gray-50 opacity-80 mt-16">
+
+            <div class="mt-12 sm:mt-14 md:mt-16">
+                <hr class="border-gray-50 opacity-80 mt-4">
             </div>
         </div>
     </section>
@@ -196,53 +206,59 @@
         </div>
     </section>
 
-   <!-- Episode Section -->
-<section class="bg-[#1A0B32] py-12">
-    <div class="max-w-5xl mx-auto px-4">
-        <h1 class="text-white text-3xl font-bold text-center mb-8">Featured Episodes</h1>
-        <div class="flex flex-col md:flex-row gap-4 md:gap-4 md:justify-between items-center md:items-stretch">
-            <div class="rounded-lg bg-[#2A0F4D] w-full md:max-w-[300px] pb-4 flex flex-col items-center">
-                <iframe class="mb-3 mt-7 w-full"
-                    src="https://www.youtube.com/embed/7DudEuxfBDc" title="৫৫০০ টাকা কোথায় ইনভেস্ট করা উচিত?"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div class="w-full text-center">
-                    <h3 class="text-white text-xl font-semibold mb-3 px-3">The Future of AI in Everyday Life</h3>
-                    <p class="text-white text-xs tracking-wider mb-3 px-3">Exploring how artificial intelligence is
-                        transforming our daily routines and what to expect in the next decade.</p>
-                    <p class="text-xs text-white tracking-wider">42 min</p>
+    <!-- Episode Section -->
+    <section class="bg-[#1A0B32] py-12">
+        <div class="max-w-5xl mx-auto px-4">
+            <h1 class="text-white text-3xl font-bold text-center mb-8">Featured Episodes</h1>
+            <div class="flex flex-col md:flex-row gap-4 md:gap-4 md:justify-between items-center md:items-stretch">
+                <div class="rounded-lg bg-[#2A0F4D] w-full md:max-w-[300px] pb-4 flex flex-col items-center">
+                    <iframe class="mb-3 mt-7 w-full" src="https://www.youtube.com/embed/7DudEuxfBDc"
+                        title="৫৫০০ টাকা কোথায় ইনভেস্ট করা উচিত?" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="w-full">
+                        <h3 class="text-white text-center text-xl font-semibold mb-3 px-3">The Future of AI in Everyday
+                            Life</h3>
+                        <p class="text-white text-center text-xs tracking-wider mb-3 px-3">Exploring how artificial
+                            intelligence is
+                            transforming our daily routines and what to expect in the next decade.</p>
+                        <p class="text-xs text-[#00FF88] tracking-wider text-left inline-flex ml-2"><span><img
+                                    class="mr-2" src="assets/clock.png" alt=""></span>42 min</p>
+                    </div>
                 </div>
-            </div>
-            <div class="rounded-lg bg-[#2A0F4D] w-full md:max-w-[300px] pb-4 flex flex-col items-center">
-                <iframe class="mb-3 mt-7 w-full"
-                    src="https://www.youtube.com/embed/7DudEuxfBDc" title="৫৫০০ টাকা কোথায় ইনভেস্ট করা উচিত?"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div class="w-full text-center">
-                    <h3 class="text-white text-xl font-semibold mb-3 px-3">The Future of AI in Everyday Life</h3>
-                    <p class="text-white text-xs tracking-wider mb-3 px-3">Exploring how artificial intelligence is
-                        transforming our daily routines and what to expect in the next decade.</p>
-                    <p class="text-xs text-white tracking-wider">42 min</p>
+                <div class="rounded-lg bg-[#2A0F4D] w-full md:max-w-[300px] pb-4 flex flex-col items-center">
+                    <iframe class="mb-3 mt-7 w-full" src="https://www.youtube.com/embed/7DudEuxfBDc"
+                        title="৫৫০০ টাকা কোথায় ইনভেস্ট করা উচিত?" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="w-full">
+                        <h3 class="text-white text-xl text-center font-semibold mb-3 px-3">The Future of AI in Everyday
+                            Life</h3>
+                        <p class="text-white text-center text-xs tracking-wider mb-3 px-3">Exploring how artificial
+                            intelligence is
+                            transforming our daily routines and what to expect in the next decade.</p>
+                        <p class="text-xs text-[#00FF88] tracking-wider text-left inline-flex ml-2"><span><img
+                                    class="mr-2" src="assets/clock.png" alt=""></span>42 min</p>
+                    </div>
                 </div>
-            </div>
-            <div class="rounded-lg bg-[#2A0F4D] w-full md:max-w-[300px] pb-4 flex flex-col items-center">
-                <iframe class="mb-3 mt-7 w-full"
-                    src="https://www.youtube.com/embed/7DudEuxfBDc" title="৫৫০০ টাকা কোথায় ইনভেস্ট করা উচিত?"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div class="w-full text-center">
-                    <h3 class="text-white text-xl font-semibold mb-3 px-3">The Future of AI in Everyday Life</h3>
-                    <p class="text-white text-xs tracking-wider mb-3 px-3">Exploring how artificial intelligence is
-                        transforming our daily routines and what to expect in the next decade.</p>
-                    <p class="text-xs text-white tracking-wider">42 min</p>
+                <div class="rounded-lg bg-[#2A0F4D] w-full md:max-w-[300px] pb-4 flex flex-col items-center">
+                    <iframe class="mb-3 mt-7 w-full" src="https://www.youtube.com/embed/7DudEuxfBDc"
+                        title="৫৫০০ টাকা কোথায় ইনভেস্ট করা উচিত?" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="w-full">
+                        <h3 class="text-white text-xl text-center font-semibold mb-3 px-3">The Future of AI in Everyday
+                            Life</h3>
+                        <p class="text-white text-center text-xs tracking-wider mb-3 px-3">Exploring how artificial
+                            intelligence is
+                            transforming our daily routines and what to expect in the next decade.</p>
+                        <p class="text-xs text-[#00FF88] tracking-wider text-left inline-flex ml-2"><span><img
+                                    class="mr-2" src="assets/clock.png" alt=""></span>42 min</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Profile section -->
     <section class="py-12 bg-[#1A0B32]">
@@ -261,7 +277,7 @@
                         shares insights from industry leaders and practical advice for anyone looking to grow in tech.
                     </p>
                     <div class="flex mt-4 gap-2 items-center ml-2.5">
-                        <img class="w-7.5 h-7.5 border rounded-full p-1.5" src="assets/linkedin.png" alt="">
+                        <img class="w-7.5 h-7.5 border rounded-full p-1.5" src="assets/x.png" alt="">
                         <img class="w-7 h-7 border rounded-full p-1.5" src="assets/youtube.png" alt="">
                         <img class="w-7 h-7 border rounded-full p-1.5" src="assets/instagram.png" alt="">
                         <img class="w-7 h-7 border rounded-full p-1.5" src="assets/x.png" alt="">
